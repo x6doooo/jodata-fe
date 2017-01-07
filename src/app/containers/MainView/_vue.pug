@@ -1,0 +1,19 @@
+//
+   Created by yangdongxu on 2016/11/23.
+
+.main-view-container
+    .main-view-nav
+        el-menu(default-active='initialize', model='vertical', theme="dark",
+        '@select'="handleSelect")
+            el-menu-item(index='InitView')
+                i.fa.fa-cloud-download
+                |&nbsp;Initialize
+            el-menu-item(index='ChartView')
+                i.fa.fa-line-chart
+                |&nbsp;Chart
+            el-menu-item(index='StocksView')
+                i.fa.fa-table
+                |&nbsp;Stocks
+    .main-view-wrap
+        router-view
+
